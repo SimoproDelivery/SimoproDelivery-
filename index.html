@@ -11,7 +11,7 @@
   box-sizing:border-box;
   margin:0;
   padding:0;
-  font-family:Arial, sans-serif;
+  font-family:Arial,sans-serif;
 }
 
 html{
@@ -25,7 +25,7 @@ body{
 }
 
 header{
-  background:rgba(4,10,20,.95);
+  background:rgba(4,10,20,.96);
   padding:15px 6%;
   display:flex;
   align-items:center;
@@ -216,3 +216,223 @@ textarea{
   min-height:120px;
   resize:vertical;
 }
+
+footer{
+  background:#030812;
+  text-align:center;
+  padding:25px 15px;
+  color:#91a4b8;
+  border-top:1px solid #12345c;
+}
+
+.whatsapp{
+  display:inline-block;
+  margin-top:10px;
+  background:#16aaff;
+  color:white;
+  padding:12px 25px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+@media(max-width:700px){
+  header{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  nav a{
+    margin:0 5px;
+    font-size:13px;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .phone{
+    font-size:26px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    SPD <span>Simo Pro Delivery</span>
+  </div>
+
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#services">الخدمات</a>
+    <a href="#about">من نحن</a>
+    <a href="#contact">اتصل بنا</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+
+    <div class="badge">🚴 توصيل سريع وموثوق في مراكش</div>
+
+    <h1>
+      Simo Pro <span>Delivery</span>
+    </h1>
+
+    <p>
+      خدمة توصيل سريعة وموثوقة في مراكش
+      <br>
+      نوصل الطعام والوثائق والطرود والأدوية بسرعة واحترافية.
+    </p>
+
+    <div class="buttons">
+      <a class="btn primary" href="#contact">
+        📞 اطلب التوصيل
+      </a>
+
+      <a class="btn secondary"
+         href="https://wa.me/212703394963"
+         target="_blank">
+        💬 واتساب
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="services">
+
+  <div class="title">
+    <h2>خدماتنا</h2>
+    <p>نوفر لك خدمة توصيل سريعة وآمنة</p>
+  </div>
+
+  <div class="services">
+
+    <div class="card">
+      <div class="icon">🍔</div>
+      <h3>توصيل الطعام</h3>
+      <p>
+        توصيل الوجبات والطلبات من المطاعم والمحلات إلى باب منزلك.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📦</div>
+      <h3>توصيل الطرود</h3>
+      <p>
+        نقل الطرود والأمانات بسرعة وأمان داخل مراكش.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📄</div>
+      <h3>الوثائق</h3>
+      <p>
+        توصيل الوثائق والمستندات إلى المكان الذي تريده.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💊</div>
+      <h3>توصيل الأدوية</h3>
+      <p>
+        خدمة توصيل الأدوية والطلبات الصحية بشكل سريع.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+
+  <div class="title">
+    <h2>من نحن؟</h2>
+  </div>
+
+  <div class="about-box">
+    <p>
+      <strong>Simo Pro Delivery</strong>
+      هي خدمة توصيل سريعة وموثوقة في مراكش.
+      نوفر توصيل الطعام والوثائق والطرود والأدوية،
+      مع خدمة احترافية وسريعة على مدار الساعة،
+      24/24 و7/7.
+    </p>
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <div class="title">
+    <h2>تواصل معنا</h2>
+    <p>لطلب خدمة التوصيل تواصل معنا مباشرة</p>
+  </div>
+
+  <div class="phone">
+    📞 0703394963
+  </div>
+
+  <a class="whatsapp"
+     href="https://wa.me/212703394963"
+     target="_blank">
+    💬 تواصل معنا عبر واتساب
+  </a>
+
+  <form class="form"
+        action="https://formsubmit.co/echakkamohamed4@gmail.com"
+        method="POST">
+
+    <input
+      type="text"
+      name="name"
+      placeholder="الاسم"
+      required>
+
+    <input
+      type="tel"
+      name="phone"
+      placeholder="رقم الهاتف"
+      required>
+
+    <select name="service" required>
+      <option value="">اختر الخدمة</option>
+      <option>توصيل الطعام</option>
+      <option>توصيل الطرود</option>
+      <option>توصيل الوثائق</option>
+      <option>توصيل الأدوية</option>
+    </select>
+
+    <textarea
+      name="message"
+      placeholder="اكتب تفاصيل الطلب..."
+      required></textarea>
+
+    <button
+      class="btn primary"
+      type="submit">
+      🚴 إرسال الطلب
+    </button>
+
+  </form>
+
+</section>
+
+<footer>
+  <p>
+    © 2026 Simo Pro Delivery — Marrakech
+  </p>
+  <p>
+    خدمة التوصيل 24/24 و7/7
+  </p>
+</footer>
+
+</body>
+</html>
