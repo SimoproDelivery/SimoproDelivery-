@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="fr" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Simo Pro Delivery | توصيل سريع في مراكش</title>
+<title>Simo Pro Delivery | Marrakech</title>
 
 <style>
 *{
@@ -14,47 +13,68 @@
   font-family:Arial,sans-serif;
 }
 
-html{
-  scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
-  background:#07101f;
-  color:white;
+  background:#050d19;
+  color:#fff;
   line-height:1.7;
 }
 
 header{
-  background:rgba(4,10,20,.96);
+  background:#030812;
   padding:15px 6%;
   display:flex;
   align-items:center;
   justify-content:space-between;
+  gap:20px;
   position:sticky;
   top:0;
   z-index:1000;
-  border-bottom:1px solid #12345c;
+  border-bottom:1px solid #123b67;
 }
 
 .logo{
-  font-size:24px;
+  font-size:25px;
   font-weight:bold;
   color:#16aaff;
+  white-space:nowrap;
 }
 
-.logo span{
-  color:white;
+.logo span{color:white}
+
+nav{
+  display:flex;
+  gap:18px;
 }
 
 nav a{
   color:white;
   text-decoration:none;
-  margin:0 10px;
   font-size:15px;
 }
 
-nav a:hover{
-  color:#16aaff;
+nav a:hover{color:#16aaff}
+
+.lang{
+  display:flex;
+  gap:5px;
+  border:1px solid #16aaff;
+  border-radius:25px;
+  padding:4px;
+}
+
+.lang button{
+  border:0;
+  background:transparent;
+  color:white;
+  padding:7px 12px;
+  border-radius:20px;
+  cursor:pointer;
+}
+
+.lang button.active{
+  background:#079cf0;
 }
 
 .hero{
@@ -63,32 +83,28 @@ nav a:hover{
   align-items:center;
   justify-content:center;
   text-align:center;
-  padding:50px 20px;
+  padding:60px 20px;
   background:
   radial-gradient(circle at center,#123b67 0%,#07101f 55%,#030812 100%);
 }
 
-.hero-content{
-  max-width:850px;
-}
+.hero-content{max-width:900px}
 
 .badge{
   display:inline-block;
   border:1px solid #168ee0;
   color:#22adff;
-  padding:7px 18px;
+  padding:8px 20px;
   border-radius:30px;
-  margin-bottom:20px;
+  margin-bottom:25px;
 }
 
 .hero h1{
-  font-size:clamp(38px,7vw,75px);
+  font-size:clamp(42px,7vw,76px);
   margin-bottom:15px;
 }
 
-.hero h1 span{
-  color:#159fff;
-}
+.hero h1 span{color:#159fff}
 
 .hero p{
   font-size:20px;
@@ -98,13 +114,13 @@ nav a:hover{
 
 .buttons{
   display:flex;
-  gap:15px;
   justify-content:center;
+  gap:15px;
   flex-wrap:wrap;
 }
 
 .btn{
-  padding:13px 25px;
+  padding:14px 28px;
   border-radius:30px;
   text-decoration:none;
   font-weight:bold;
@@ -121,22 +137,16 @@ nav a:hover{
   color:white;
 }
 
-section{
-  padding:70px 7%;
-}
+section{padding:70px 7%}
 
 .title{
   text-align:center;
   margin-bottom:40px;
 }
 
-.title h2{
-  font-size:35px;
-}
+.title h2{font-size:35px}
 
-.title p{
-  color:#aebed0;
-}
+.title p{color:#aebed0}
 
 .services{
   display:grid;
@@ -150,12 +160,6 @@ section{
   border-radius:18px;
   text-align:center;
   border:1px solid #15385d;
-  transition:.3s;
-}
-
-.card:hover{
-  transform:translateY(-6px);
-  border-color:#139ff0;
 }
 
 .icon{
@@ -163,13 +167,9 @@ section{
   margin-bottom:12px;
 }
 
-.card h3{
-  margin-bottom:8px;
-}
+.card h3{margin-bottom:8px}
 
-.card p{
-  color:#b6c5d5;
-}
+.card p{color:#b6c5d5}
 
 .about{
   background:#050d19;
@@ -195,69 +195,41 @@ section{
   margin:20px 0;
 }
 
-.form{
-  max-width:600px;
-  margin:30px auto 0;
-  display:grid;
-  gap:14px;
-}
-
-input,select,textarea{
-  width:100%;
-  padding:14px;
-  border-radius:10px;
-  border:1px solid #24496c;
-  background:#071321;
-  color:white;
-  font-size:16px;
-}
-
-textarea{
-  min-height:120px;
-  resize:vertical;
-}
-
-footer{
-  background:#030812;
-  text-align:center;
-  padding:25px 15px;
-  color:#91a4b8;
-  border-top:1px solid #12345c;
-}
-
 .whatsapp{
   display:inline-block;
-  margin-top:10px;
   background:#16aaff;
   color:white;
-  padding:12px 25px;
+  padding:13px 28px;
   border-radius:30px;
   text-decoration:none;
   font-weight:bold;
 }
 
+footer{
+  background:#030812;
+  text-align:center;
+  padding:25px;
+  color:#91a4b8;
+  border-top:1px solid #12345c;
+}
+
 @media(max-width:700px){
   header{
     flex-direction:column;
-    gap:10px;
+    padding:14px 10px;
   }
 
-  nav a{
-    margin:0 5px;
-    font-size:13px;
+  nav{
+    gap:12px;
   }
 
-  .hero h1{
-    font-size:42px;
-  }
+  nav a{font-size:13px}
 
-  .hero p{
-    font-size:17px;
-  }
+  .hero h1{font-size:42px}
 
-  .phone{
-    font-size:26px;
-  }
+  .hero p{font-size:17px}
+
+  .phone{font-size:27px}
 }
 </style>
 </head>
@@ -265,174 +237,204 @@ footer{
 <body>
 
 <header>
-  <div class="logo">
-    SPD <span>Simo Pro Delivery</span>
-  </div>
 
-  <nav>
-    <a href="#home">الرئيسية</a>
-    <a href="#services">الخدمات</a>
-    <a href="#about">من نحن</a>
-    <a href="#contact">اتصل بنا</a>
-  </nav>
+<div class="logo">
+SPD <span>Simo Pro Delivery</span>
+</div>
+
+<nav>
+<a href="#home" data-fr="Accueil" data-ar="الرئيسية">Accueil</a>
+<a href="#services" data-fr="Nos services" data-ar="خدماتنا">Nos services</a>
+<a href="#about" data-fr="À propos" data-ar="من نحن">À propos</a>
+<a href="#contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a>
+</nav>
+
+<div class="lang">
+<button id="frBtn" class="active" onclick="setLang('fr')">🇫🇷 Français</button>
+<button id="arBtn" onclick="setLang('ar')">🇲🇦 العربية</button>
+</div>
+
 </header>
 
 <section class="hero" id="home">
-  <div class="hero-content">
 
-    <div class="badge">🚴 توصيل سريع وموثوق في مراكش</div>
+<div class="hero-content">
 
-    <h1>
-      Simo Pro <span>Delivery</span>
-    </h1>
+<div class="badge">
+<span data-fr="🚴 Livraison rapide et fiable à Marrakech"
+data-ar="🚴 توصيل سريع وموثوق في مراكش">
+🚴 Livraison rapide et fiable à Marrakech
+</span>
+</div>
 
-    <p>
-      خدمة توصيل سريعة وموثوقة في مراكش
-      <br>
-      نوصل الطعام والوثائق والطرود والأدوية بسرعة واحترافية.
-    </p>
+<h1>
+Simo Pro <span>Delivery</span>
+</h1>
 
-    <div class="buttons">
-      <a class="btn primary" href="#contact">
-        📞 اطلب التوصيل
-      </a>
+<p>
+<span data-fr="Nous livrons vos repas, médicaments, documents et colis avec rapidité et professionnalisme."
+data-ar="نوصل طعامك، أدويتك، وثائقك وطرودك بسرعة واحترافية.">
+Nous livrons vos repas, médicaments, documents et colis avec rapidité et professionnalisme.
+</span>
+</p>
 
-      <a class="btn secondary"
-         href="https://wa.me/212703394963"
-         target="_blank">
-        💬 واتساب
-      </a>
-    </div>
+<div class="buttons">
 
-  </div>
+<a class="btn primary" href="#contact">
+<span data-fr="📞 Commander maintenant"
+data-ar="📞 اطلب التوصيل">
+📞 Commander maintenant
+</span>
+</a>
+
+<a class="btn secondary"
+href="https://wa.me/212703394963"
+target="_blank">
+💬 WhatsApp
+</a>
+
+</div>
+
+</div>
 </section>
 
 <section id="services">
 
-  <div class="title">
-    <h2>خدماتنا</h2>
-    <p>نوفر لك خدمة توصيل سريعة وآمنة</p>
-  </div>
+<div class="title">
+<h2 data-fr="Nos services" data-ar="خدماتنا">Nos services</h2>
+<p data-fr="Une solution complète pour vos besoins"
+data-ar="حل متكامل لجميع احتياجاتك">
+Une solution complète pour vos besoins
+</p>
+</div>
 
-  <div class="services">
+<div class="services">
 
-    <div class="card">
-      <div class="icon">🍔</div>
-      <h3>توصيل الطعام</h3>
-      <p>
-        توصيل الوجبات والطلبات من المطاعم والمحلات إلى باب منزلك.
-      </p>
-    </div>
+<div class="card">
+<div class="icon">🍔</div>
+<h3 data-fr="Livraison de repas" data-ar="توصيل الطعام">
+Livraison de repas
+</h3>
+<p data-fr="Vos plats préférés directement chez vous."
+data-ar="وجباتك المفضلة مباشرة إلى باب منزلك.">
+Vos plats préférés directement chez vous.
+</p>
+</div>
 
-    <div class="card">
-      <div class="icon">📦</div>
-      <h3>توصيل الطرود</h3>
-      <p>
-        نقل الطرود والأمانات بسرعة وأمان داخل مراكش.
-      </p>
-    </div>
+<div class="card">
+<div class="icon">💊</div>
+<h3 data-fr="Livraison de médicaments" data-ar="توصيل الأدوية">
+Livraison de médicaments
+</h3>
+<p data-fr="Vos médicaments livrés rapidement et en toute sécurité."
+data-ar="توصيل أدويتك بسرعة وأمان.">
+Vos médicaments livrés rapidement et en toute sécurité.
+</p>
+</div>
 
-    <div class="card">
-      <div class="icon">📄</div>
-      <h3>الوثائق</h3>
-      <p>
-        توصيل الوثائق والمستندات إلى المكان الذي تريده.
-      </p>
-    </div>
+<div class="card">
+<div class="icon">📦</div>
+<h3 data-fr="Colis & Mandats" data-ar="الطرود والأمانات">
+Colis & Mandats
+</h3>
+<p data-fr="Vos colis et mandats en toute confiance."
+data-ar="توصيل طرودك وأماناتك بكل ثقة.">
+Vos colis et mandats en toute confiance.
+</p>
+</div>
 
-    <div class="card">
-      <div class="icon">💊</div>
-      <h3>توصيل الأدوية</h3>
-      <p>
-        خدمة توصيل الأدوية والطلبات الصحية بشكل سريع.
-      </p>
-    </div>
+<div class="card">
+<div class="icon">📄</div>
+<h3 data-fr="Documents" data-ar="الوثائق">
+Documents
+</h3>
+<p data-fr="Vos documents à destination du lieu de votre choix."
+data-ar="نوصل وثائقك إلى المكان الذي تريده.">
+Vos documents à destination du lieu de votre choix.
+</p>
+</div>
 
-  </div>
+</div>
 </section>
 
 <section class="about" id="about">
 
-  <div class="title">
-    <h2>من نحن؟</h2>
-  </div>
+<div class="title">
+<h2 data-fr="À propos de nous" data-ar="من نحن">
+À propos de nous
+</h2>
+</div>
 
-  <div class="about-box">
-    <p>
-      <strong>Simo Pro Delivery</strong>
-      هي خدمة توصيل سريعة وموثوقة في مراكش.
-      نوفر توصيل الطعام والوثائق والطرود والأدوية،
-      مع خدمة احترافية وسريعة على مدار الساعة،
-      24/24 و7/7.
-    </p>
-  </div>
+<div class="about-box">
 
+<p data-fr="Simo Pro Delivery est un service de livraison rapide et fiable à Marrakech. Nous assurons la livraison de repas, documents, colis et médicaments avec professionnalisme."
+data-ar="Simo Pro Delivery هي خدمة توصيل سريعة وموثوقة في مراكش. نوفر توصيل الطعام والوثائق والطرود والأدوية باحترافية وسرعة.">
+Simo Pro Delivery est un service de livraison rapide et fiable à Marrakech.
+Nous assurons la livraison de repas, documents, colis et médicaments avec professionnalisme.
+</p>
+
+</div>
 </section>
 
 <section class="contact" id="contact">
 
-  <div class="title">
-    <h2>تواصل معنا</h2>
-    <p>لطلب خدمة التوصيل تواصل معنا مباشرة</p>
-  </div>
+<div class="title">
+<h2 data-fr="Contactez-nous" data-ar="تواصل معنا">
+Contactez-nous
+</h2>
 
-  <div class="phone">
-    📞 0703394963
-  </div>
+<p data-fr="Disponible 24/24 et 7/7"
+data-ar="متوفرون 24/24 و7/7">
+Disponible 24/24 et 7/7
+</p>
+</div>
 
-  <a class="whatsapp"
-     href="https://wa.me/212703394963"
-     target="_blank">
-    💬 تواصل معنا عبر واتساب
-  </a>
+<div class="phone">
+📞 0703394963
+</div>
 
-  <form class="form"
-        action="https://formsubmit.co/echakkamohamed4@gmail.com"
-        method="POST">
-
-    <input
-      type="text"
-      name="name"
-      placeholder="الاسم"
-      required>
-
-    <input
-      type="tel"
-      name="phone"
-      placeholder="رقم الهاتف"
-      required>
-
-    <select name="service" required>
-      <option value="">اختر الخدمة</option>
-      <option>توصيل الطعام</option>
-      <option>توصيل الطرود</option>
-      <option>توصيل الوثائق</option>
-      <option>توصيل الأدوية</option>
-    </select>
-
-    <textarea
-      name="message"
-      placeholder="اكتب تفاصيل الطلب..."
-      required></textarea>
-
-    <button
-      class="btn primary"
-      type="submit">
-      🚴 إرسال الطلب
-    </button>
-
-  </form>
+<a class="whatsapp"
+href="https://wa.me/212703394963"
+target="_blank">
+💬 WhatsApp
+</a>
 
 </section>
 
 <footer>
-  <p>
-    © 2026 Simo Pro Delivery — Marrakech
-  </p>
-  <p>
-    خدمة التوصيل 24/24 و7/7
-  </p>
+<p>
+© 2026 Simo Pro Delivery — Marrakech
+</p>
+<p data-fr="Livraison rapide et professionnelle"
+data-ar="توصيل سريع واحترافي">
+Livraison rapide et professionnelle
+</p>
 </footer>
 
+<script>
+function setLang(lang){
+
+document.documentElement.lang = lang;
+
+if(lang === "ar"){
+document.documentElement.dir = "rtl";
+}else{
+document.documentElement.dir = "ltr";
+}
+
+document.querySelectorAll("[data-fr]").forEach(function(el){
+el.textContent = el.getAttribute("data-" + lang);
+});
+
+document.getElementById("frBtn").classList.toggle("active",lang === "fr");
+document.getElementById("arBtn").classList.toggle("active",lang === "ar");
+
+localStorage.setItem("language",lang);
+}
+
+const savedLang = localStorage.getItem("language") || "fr";
+setLang(savedLang);
+</script>
+
 </body>
-</html>
+  </html>
