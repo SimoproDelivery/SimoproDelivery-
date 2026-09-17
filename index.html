@@ -4,12 +4,15 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Simo Pro Delivery | Marrakech</title>
 
 <style>
+
+/* =========================
+   GENERAL
+========================= */
 
 *{
   box-sizing:border-box;
@@ -23,16 +26,18 @@ html{
 }
 
 body{
-  background:#050d19;
+  background:#030914;
   color:#fff;
   line-height:1.7;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 header{
-  background:#030812;
-  padding:10px 6%;
+  background:#020711;
+  padding:12px 5%;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -40,100 +45,125 @@ header{
   position:sticky;
   top:0;
   z-index:1000;
-  border-bottom:1px solid #123b67;
+  border-bottom:1px solid #124a78;
 }
 
 .logo img{
-  width:75px;
-  height:75px;
+  width:72px;
+  height:72px;
   object-fit:contain;
   display:block;
 }
 
 nav{
   display:flex;
-  gap:18px;
+  gap:20px;
+  align-items:center;
 }
 
 nav a{
-  color:white;
+  color:#fff;
   text-decoration:none;
   font-size:15px;
+  transition:.3s;
 }
 
 nav a:hover{
-  color:#16aaff;
+  color:#12a9ff;
 }
 
-/* LANGUAGE */
+/* =========================
+   LANGUAGE
+========================= */
 
 .lang{
   display:flex;
   gap:5px;
-  border:1px solid #16aaff;
-  border-radius:25px;
+  border:1px solid #12a9ff;
+  border-radius:30px;
   padding:4px;
 }
 
 .lang button{
   border:0;
   background:transparent;
-  color:white;
-  padding:7px 12px;
-  border-radius:20px;
+  color:#fff;
+  padding:8px 12px;
+  border-radius:22px;
   cursor:pointer;
+  font-size:14px;
 }
 
 .lang button.active{
-  background:#079cf0;
+  background:#079fea;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero{
-  min-height:90vh;
+  min-height:88vh;
   display:flex;
   align-items:center;
   justify-content:center;
   text-align:center;
-  padding:60px 20px;
+  padding:70px 20px;
 
   background:
   radial-gradient(
     circle at center,
-    #123b67 0%,
-    #07101f 55%,
-    #030812 100%
+    #0d4776 0%,
+    #06172b 45%,
+    #020711 100%
   );
 }
 
 .hero-content{
-  max-width:900px;
+  width:100%;
+  max-width:1000px;
+}
+
+.hero-logo{
+  margin-bottom:25px;
+}
+
+.hero-logo img{
+  width:170px;
+  max-width:55vw;
+  filter:drop-shadow(0 0 20px rgba(0,160,255,.35));
 }
 
 .badge{
   display:inline-block;
-  border:1px solid #168ee0;
-  color:#22adff;
-  padding:8px 20px;
+  border:1px solid #159fe9;
+  color:#22b3ff;
+  padding:9px 20px;
   border-radius:30px;
   margin-bottom:25px;
+  font-size:17px;
 }
 
 .hero h1{
   font-size:clamp(42px,7vw,76px);
-  margin-bottom:15px;
+  line-height:1.1;
+  margin-bottom:20px;
 }
 
 .hero h1 span{
-  color:#159fff;
+  color:#12a8ff;
 }
 
 .hero p{
+  max-width:850px;
+  margin:0 auto 30px;
   font-size:20px;
-  color:#d6e2ef;
-  margin-bottom:30px;
+  color:#d6e4f1;
 }
+
+/* =========================
+   BUTTONS
+========================= */
 
 .buttons{
   display:flex;
@@ -148,22 +178,30 @@ nav a:hover{
   text-decoration:none;
   font-weight:bold;
   display:inline-block;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
 }
 
 .primary{
-  background:#079cf0;
-  color:white;
+  background:#079fea;
+  color:#fff;
+  box-shadow:0 0 20px rgba(0,160,255,.25);
 }
 
 .secondary{
-  border:1px solid #168ee0;
-  color:white;
+  border:1px solid #159fe9;
+  color:#fff;
 }
 
-/* SECTIONS */
+/* =========================
+   SECTIONS
+========================= */
 
 section{
-  padding:70px 7%;
+  padding:75px 6%;
 }
 
 .title{
@@ -172,14 +210,37 @@ section{
 }
 
 .title h2{
-  font-size:35px;
+  font-size:38px;
+  margin-bottom:8px;
 }
 
 .title p{
   color:#aebed0;
+  font-size:17px;
 }
 
-/* SERVICES */
+/* =========================
+   MAIN SERVICE IMAGE
+========================= */
+
+.service-main{
+  max-width:1050px;
+  margin:auto;
+  border-radius:25px;
+  overflow:hidden;
+  border:1px solid #145b8e;
+  box-shadow:0 0 35px rgba(0,140,255,.18);
+}
+
+.service-main img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* =========================
+   SERVICES CARDS
+========================= */
 
 .services{
   display:grid;
@@ -187,71 +248,133 @@ section{
   repeat(auto-fit,minmax(220px,1fr));
 
   gap:20px;
+  max-width:1100px;
+  margin:auto;
 }
 
 .card{
   background:
   linear-gradient(
     145deg,
-    #0d2038,
-    #081321
+    #0b2946,
+    #061323
   );
 
   padding:30px 20px;
-  border-radius:18px;
+  border-radius:20px;
   text-align:center;
-  border:1px solid #15385d;
 
-  transition:0.3s;
+  border:1px solid #164a70;
+
+  transition:.3s;
 }
 
 .card:hover{
-  transform:translateY(-5px);
+  transform:translateY(-6px);
   border-color:#16aaff;
+  box-shadow:0 10px 30px rgba(0,150,255,.12);
 }
 
 .icon{
-  font-size:45px;
+  font-size:48px;
   margin-bottom:12px;
 }
 
 .card h3{
+  font-size:21px;
   margin-bottom:8px;
 }
 
 .card p{
-  color:#b6c5d5;
+  color:#b7c8d8;
 }
 
-/* ABOUT */
+/* =========================
+   MAP SECTION
+========================= */
+
+.map-section{
+  background:
+  linear-gradient(
+    180deg,
+    #030914,
+    #06182b
+  );
+}
+
+.map-box{
+  max-width:1050px;
+  margin:auto;
+  border-radius:25px;
+  overflow:hidden;
+  border:1px solid #146096;
+  box-shadow:0 0 35px rgba(0,150,255,.18);
+}
+
+.map-box img{
+  width:100%;
+  display:block;
+  height:auto;
+}
+
+/* =========================
+   SLOGAN
+========================= */
+
+.slogan{
+  text-align:center;
+  padding:60px 20px;
+
+  background:
+  radial-gradient(
+    circle,
+    #0b3d67,
+    #030914
+  );
+}
+
+.slogan h2{
+  font-size:clamp(30px,5vw,52px);
+  color:#fff;
+}
+
+.slogan h2 span{
+  color:#12aaff;
+}
+
+/* =========================
+   ABOUT
+========================= */
 
 .about{
-  background:#050d19;
   text-align:center;
+  background:#030914;
 }
 
 .about-box{
   max-width:850px;
   margin:auto;
-  color:#c7d3df;
+  color:#c7d5e2;
   font-size:18px;
 }
 
-/* CONTACT */
+/* =========================
+   CONTACT
+========================= */
 
 .contact{
   background:
   linear-gradient(
     135deg,
-    #0a2745,
-    #07101f
+    #0a3153,
+    #041020
   );
 
   text-align:center;
 }
 
 .phone{
-  font-size:32px;
+  font-size:34px;
   font-weight:bold;
   color:#16aaff;
   margin:20px 0;
@@ -260,24 +383,34 @@ section{
 .whatsapp{
   display:inline-block;
   background:#16aaff;
-  color:white;
-  padding:13px 28px;
+  color:#fff;
+  padding:14px 30px;
   border-radius:30px;
   text-decoration:none;
   font-weight:bold;
+  font-size:18px;
+  box-shadow:0 0 20px rgba(0,170,255,.2);
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer{
-  background:#030812;
+  background:#020711;
   text-align:center;
   padding:25px;
   color:#91a4b8;
-  border-top:1px solid #12345c;
+  border-top:1px solid #123b61;
 }
 
-/* MOBILE */
+footer p{
+  margin:5px;
+}
+
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:700px){
 
@@ -287,8 +420,8 @@ footer{
   }
 
   .logo img{
-    width:65px;
-    height:65px;
+    width:68px;
+    height:68px;
   }
 
   nav{
@@ -301,6 +434,15 @@ footer{
     font-size:13px;
   }
 
+  .hero{
+    min-height:80vh;
+    padding:55px 18px;
+  }
+
+  .hero-logo img{
+    width:145px;
+  }
+
   .hero h1{
     font-size:42px;
   }
@@ -309,19 +451,53 @@ footer{
     font-size:17px;
   }
 
+  .badge{
+    font-size:15px;
+  }
+
+  section{
+    padding:55px 18px;
+  }
+
+  .title h2{
+    font-size:32px;
+  }
+
   .phone{
     font-size:27px;
   }
 
 }
 
+/* =========================
+   ARABIC
+========================= */
+
+[dir="rtl"] body{
+  text-align:right;
+}
+
+[dir="rtl"] .hero,
+[dir="rtl"] .title,
+[dir="rtl"] .card,
+[dir="rtl"] .about,
+[dir="rtl"] .contact,
+[dir="rtl"] .slogan,
+[dir="rtl"] footer{
+  text-align:center;
+}
+
 </style>
 
 </head>
 
+
 <body>
 
-<!-- HEADER -->
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -332,6 +508,7 @@ src="file_000000000cd081f493abbfca117829e2.png"
 alt="Simo Pro Delivery">
 
 </div>
+
 
 <nav>
 
@@ -347,6 +524,12 @@ data-ar="خدماتنا">
 Nos services
 </a>
 
+<a href="#map"
+data-fr="Marrakech"
+data-ar="مراكش">
+Marrakech
+</a>
+
 <a href="#about"
 data-fr="À propos"
 data-ar="من نحن">
@@ -360,6 +543,7 @@ Contact
 </a>
 
 </nav>
+
 
 <div class="lang">
 
@@ -385,13 +569,25 @@ onclick="setLang('ar')">
 </header>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section
 class="hero"
 id="home">
 
 <div class="hero-content">
+
+
+<div class="hero-logo">
+
+<img
+src="file_000000000cd081f493abbfca117829e2.png"
+alt="SPD Simo Pro Delivery">
+
+</div>
+
 
 <div class="badge">
 
@@ -459,9 +655,12 @@ target="_blank">
 </section>
 
 
-<!-- SERVICES -->
+<!-- =========================
+     SERVICES
+========================= -->
 
 <section id="services">
+
 
 <div class="title">
 
@@ -474,14 +673,28 @@ Nos services
 </h2>
 
 <p
-data-fr="Une solution complète pour vos besoins"
-data-ar="حل متكامل لجميع احتياجاتك">
+data-fr="Simo Pro Delivery est toujours près de vous"
+data-ar="Simo ديما قريب منكم">
 
-Une solution complète pour vos besoins
+Simo Pro Delivery est toujours près de vous
 
 </p>
 
 </div>
+
+
+<!-- MAIN FOOD / DELIVERY IMAGE -->
+
+<div class="service-main">
+
+<img
+src="file_00000000fe2081f591f7756c5f415a14.png"
+alt="Simo Pro Delivery - Livraison de repas à Marrakech">
+
+</div>
+
+
+<br><br>
 
 
 <div class="services">
@@ -489,7 +702,9 @@ Une solution complète pour vos besoins
 
 <div class="card">
 
-<div class="icon">🍔</div>
+<div class="icon">
+🍔
+</div>
 
 <h3
 data-fr="Livraison de repas"
@@ -500,10 +715,10 @@ Livraison de repas
 </h3>
 
 <p
-data-fr="Vos repas livrés rapidement à Marrakech."
-data-ar="توصيل وجباتك بسرعة في مراكش.">
+data-fr="Vos repas préférés livrés rapidement."
+data-ar="وجباتك المفضلة توصلك بسرعة.">
 
-Vos repas livrés rapidement à Marrakech.
+Vos repas préférés livrés rapidement.
 
 </p>
 
@@ -512,7 +727,9 @@ Vos repas livrés rapidement à Marrakech.
 
 <div class="card">
 
-<div class="icon">💊</div>
+<div class="icon">
+💊
+</div>
 
 <h3
 data-fr="Livraison de médicaments"
@@ -535,7 +752,9 @@ Livraison rapide et sécurisée.
 
 <div class="card">
 
-<div class="icon">📦</div>
+<div class="icon">
+📦
+</div>
 
 <h3
 data-fr="Colis & Mandats"
@@ -546,10 +765,10 @@ Colis & Mandats
 </h3>
 
 <p
-data-fr="Nous transportons vos colis en toute confiance."
+data-fr="Vos colis livrés en toute confiance."
 data-ar="نوصل طرودك وأماناتك بكل ثقة.">
 
-Nous transportons vos colis en toute confiance.
+Vos colis livrés en toute confiance.
 
 </p>
 
@@ -558,7 +777,9 @@ Nous transportons vos colis en toute confiance.
 
 <div class="card">
 
-<div class="icon">📄</div>
+<div class="icon">
+📄
+</div>
 
 <h3
 data-fr="Documents"
@@ -569,10 +790,10 @@ Documents
 </h3>
 
 <p
-data-fr="Vos documents à destination du lieu de votre choix."
-data-ar="نوصل وثائقك إلى المكان الذي تريده.">
+data-fr="Vos documents à destination."
+data-ar="نوصل وثائقك للمكان اللي بغيتي.">
 
-Vos documents à destination du lieu de votre choix.
+Vos documents à destination.
 
 </p>
 
@@ -584,11 +805,85 @@ Vos documents à destination du lieu de votre choix.
 </section>
 
 
-<!-- ABOUT -->
+<!-- =========================
+     SLOGAN
+========================= -->
+
+<section class="slogan">
+
+<h2>
+
+<span
+data-fr="Simo"
+data-ar="Simo">
+
+Simo
+
+</span>
+
+<span
+data-fr=" toujours près de vous"
+data-ar=" ديما قريب منكم">
+
+ toujours près de vous
+
+</span>
+
+</h2>
+
+</section>
+
+
+<!-- =========================
+     MARRAKECH MAP
+========================= -->
+
+<section
+class="map-section"
+id="map">
+
+
+<div class="title">
+
+<h2
+data-fr="Livraison à Marrakech"
+data-ar="التوصيل في مراكش">
+
+Livraison à Marrakech
+
+</h2>
+
+<p
+data-fr="Nous sommes près de vous"
+data-ar="حنا ديما قريبين منكم">
+
+Nous sommes près de vous
+
+</p>
+
+</div>
+
+
+<div class="map-box">
+
+<img
+src="file_00000000ab2481f5b854773c6c10e86f.png"
+alt="Simo Pro Delivery - Carte de Marrakech">
+
+</div>
+
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section
 class="about"
 id="about">
+
 
 <div class="title">
 
@@ -620,11 +915,14 @@ Nous assurons la livraison de repas, documents, colis et médicaments avec profe
 </section>
 
 
-<!-- CONTACT -->
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section
 class="contact"
 id="contact">
+
 
 <div class="title">
 
@@ -635,6 +933,7 @@ data-ar="تواصل معنا">
 Contactez-nous
 
 </h2>
+
 
 <p
 data-fr="Disponible 24/24 et 7/7"
@@ -663,10 +962,13 @@ target="_blank">
 
 </a>
 
+
 </section>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -675,6 +977,7 @@ target="_blank">
 © 2026 Simo Pro Delivery — Marrakech
 
 </p>
+
 
 <p
 data-fr="Livraison rapide et professionnelle"
@@ -687,13 +990,16 @@ Livraison rapide et professionnelle
 </footer>
 
 
-<!-- LANGUAGE SCRIPT -->
+<!-- =========================
+     LANGUAGE SCRIPT
+========================= -->
 
 <script>
 
 function setLang(lang){
 
 document.documentElement.lang = lang;
+
 
 if(lang === "ar"){
 
