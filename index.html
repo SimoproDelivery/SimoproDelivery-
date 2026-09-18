@@ -174,4 +174,932 @@ nav a:hover{
 .hero-logo img{
   width:170px;
   max-width:55vw;
-  filter:drop-shadow
+  filter:drop-shadow(0 0 20px rgba(0,160,255,.35));
+}
+
+.badge{
+  display:inline-block;
+  border:1px solid #159fe9;
+  color:#22b3ff;
+  padding:9px 20px;
+  border-radius:30px;
+  margin-bottom:25px;
+  font-size:17px;
+}
+
+.hero h1{
+  font-size:clamp(42px,7vw,76px);
+  line-height:1.1;
+  margin-bottom:20px;
+}
+
+.hero h1 span{
+  color:#12a8ff;
+}
+
+.hero p{
+  max-width:850px;
+  margin:0 auto 30px;
+  font-size:20px;
+  color:#d6e4f1;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  padding:14px 28px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  display:inline-block;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+.primary{
+  background:#079fea;
+  color:#fff;
+  box-shadow:0 0 20px rgba(0,160,255,.25);
+}
+
+.secondary{
+  border:1px solid #159fe9;
+  color:#fff;
+}
+
+/* =========================
+   GOOGLE REVIEW BUTTON
+========================= */
+
+.google-review{
+  display:inline-block;
+  margin-top:12px;
+  padding:14px 28px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  background:#fff;
+  color:#111;
+  border:1px solid #ddd;
+  transition:.3s;
+}
+
+.google-review:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 25px rgba(255,255,255,.12);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+  padding:75px 6%;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.title h2{
+  font-size:38px;
+  margin-bottom:8px;
+}
+
+.title p{
+  color:#aebed0;
+  font-size:17px;
+}
+
+/* =========================
+   MAIN SERVICE IMAGE
+========================= */
+
+.service-main{
+  max-width:1050px;
+  margin:auto;
+  border-radius:25px;
+  overflow:hidden;
+  border:1px solid #145b8e;
+  box-shadow:0 0 35px rgba(0,140,255,.18);
+}
+
+.service-main img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* =========================
+   SERVICES CARDS
+========================= */
+
+.services{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(220px,1fr));
+
+  gap:20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.card{
+  background:
+  linear-gradient(
+    145deg,
+    #0b2946,
+    #061323
+  );
+
+  padding:30px 20px;
+  border-radius:20px;
+  text-align:center;
+
+  border:1px solid #164a70;
+
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  border-color:#16aaff;
+  box-shadow:0 10px 30px rgba(0,150,255,.12);
+}
+
+.icon{
+  font-size:48px;
+  margin-bottom:12px;
+}
+
+.card h3{
+  font-size:21px;
+  margin-bottom:8px;
+}
+
+.card p{
+  color:#b7c8d8;
+}
+
+/* =========================
+   MAP SECTION
+========================= */
+
+.map-section{
+  background:
+  linear-gradient(
+    180deg,
+    #030914,
+    #06182b
+  );
+}
+
+.map-box{
+  max-width:1050px;
+  margin:auto;
+  border-radius:25px;
+  overflow:hidden;
+  border:1px solid #146096;
+  box-shadow:0 0 35px rgba(0,150,255,.18);
+}
+
+.map-box img{
+  width:100%;
+  display:block;
+  height:auto;
+}
+
+/* =========================
+   SLOGAN
+========================= */
+
+.slogan{
+  text-align:center;
+  padding:60px 20px;
+
+  background:
+  radial-gradient(
+    circle,
+    #0b3d67,
+    #030914
+  );
+}
+
+.slogan h2{
+  font-size:clamp(30px,5vw,52px);
+  color:#fff;
+}
+
+.slogan h2 span{
+  color:#12aaff;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+  text-align:center;
+  background:#030914;
+}
+
+.about-box{
+  max-width:850px;
+  margin:auto;
+  color:#c7d5e2;
+  font-size:18px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+  background:
+  linear-gradient(
+    135deg,
+    #0a3153,
+    #041020
+  );
+
+  text-align:center;
+}
+
+.phone{
+  font-size:34px;
+  font-weight:bold;
+  color:#16aaff;
+  margin:20px 0;
+}
+
+.whatsapp{
+  display:inline-block;
+  background:#16aaff;
+  color:#fff;
+  padding:14px 30px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:18px;
+  box-shadow:0 0 20px rgba(0,170,255,.2);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  background:#020711;
+  text-align:center;
+  padding:25px;
+  color:#91a4b8;
+  border-top:1px solid #123b61;
+}
+
+footer p{
+  margin:5px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:700px){
+
+  header{
+    flex-direction:column;
+    padding:10px;
+  }
+
+  .logo img{
+    width:68px;
+    height:68px;
+  }
+
+  nav{
+    gap:12px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  nav a{
+    font-size:13px;
+  }
+
+  .hero{
+    min-height:80vh;
+    padding:55px 18px;
+  }
+
+  .hero-logo img{
+    width:145px;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .badge{
+    font-size:15px;
+  }
+
+  section{
+    padding:55px 18px;
+  }
+
+  .title h2{
+    font-size:32px;
+  }
+
+  .phone{
+    font-size:27px;
+  }
+
+}
+
+/* =========================
+   ARABIC
+========================= */
+
+[dir="rtl"] body{
+  text-align:right;
+}
+
+[dir="rtl"] .hero,
+[dir="rtl"] .title,
+[dir="rtl"] .card,
+[dir="rtl"] .about,
+[dir="rtl"] .contact,
+[dir="rtl"] .slogan,
+[dir="rtl"] footer{
+  text-align:center;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img
+src="file_000000000cd081f493abbfca117829e2.png"
+alt="Simo Pro Delivery">
+
+</div>
+
+
+<nav>
+
+<a href="#home"
+data-fr="Accueil"
+data-ar="الرئيسية">
+Accueil
+</a>
+
+<a href="#services"
+data-fr="Nos services"
+data-ar="خدماتنا">
+Nos services
+</a>
+
+<a href="#map"
+data-fr="Marrakech"
+data-ar="مراكش">
+Marrakech
+</a>
+
+<a href="#about"
+data-fr="À propos"
+data-ar="من نحن">
+À propos
+</a>
+
+<a href="#contact"
+data-fr="Contact"
+data-ar="اتصل بنا">
+Contact
+</a>
+
+</nav>
+
+
+<div class="lang">
+
+<button
+id="frBtn"
+class="active"
+onclick="setLang('fr')">
+
+🇫🇷 Français
+
+</button>
+
+<button
+id="arBtn"
+onclick="setLang('ar')">
+
+🇲🇦 العربية
+
+</button>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="hero-logo">
+
+<img
+src="file_000000000cd081f493abbfca117829e2.png"
+alt="SPD Simo Pro Delivery">
+
+</div>
+
+
+<div class="badge">
+
+<span
+data-fr="🚴 Livraison rapide et fiable à Marrakech"
+data-ar="🚴 توصيل سريع وموثوق في مراكش">
+
+🚴 Livraison rapide et fiable à Marrakech
+
+</span>
+
+</div>
+
+
+<h1>
+
+Simo Pro <span>Delivery</span>
+
+</h1>
+
+
+<p>
+
+<span
+data-fr="Nous livrons vos repas, médicaments, documents et colis avec rapidité et professionnalisme."
+data-ar="نوصل طعامك، أدويتك، وثائقك وطرودك بسرعة واحترافية.">
+
+Nous livrons vos repas, médicaments, documents et colis avec rapidité et professionnalisme.
+
+</span>
+
+</p>
+
+
+<div class="buttons">
+
+<a
+class="btn primary"
+href="#contact">
+
+<span
+data-fr="📞 Commander maintenant"
+data-ar="📞 اطلب التوصيل">
+
+📞 Commander maintenant
+
+</span>
+
+</a>
+
+
+<a
+class="btn secondary"
+href="https://wa.me/212703394963"
+target="_blank"
+rel="noopener">
+
+💬 WhatsApp
+
+</a>
+
+</div>
+
+
+<a
+class="google-review"
+href="https://g.page/r/CdU8NoTJGz4kECE/review"
+target="_blank"
+rel="noopener">
+
+⭐ قيّمنا على Google
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="title">
+
+<h2
+data-fr="Nos services"
+data-ar="خدماتنا">
+
+Nos services
+
+</h2>
+
+<p
+data-fr="Simo Pro Delivery est toujours près de vous"
+data-ar="Simo ديما قريب منكم">
+
+Simo Pro Delivery est toujours près de vous
+
+</p>
+
+</div>
+
+
+<div class="service-main">
+
+<img
+src="file_00000000fe2081f591f7756c5f415a14.png"
+alt="Simo Pro Delivery - Livraison de repas à Marrakech">
+
+</div>
+
+
+<br><br>
+
+
+<div class="services">
+
+
+<div class="card">
+
+<div class="icon">🍔</div>
+
+<h3
+data-fr="Livraison de repas"
+data-ar="توصيل الطعام">
+
+Livraison de repas
+
+</h3>
+
+<p
+data-fr="Vos repas préférés livrés rapidement."
+data-ar="وجباتك المفضلة توصلك بسرعة.">
+
+Vos repas préférés livrés rapidement.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">💊</div>
+
+<h3
+data-fr="Livraison de médicaments"
+data-ar="توصيل الأدوية">
+
+Livraison de médicaments
+
+</h3>
+
+<p
+data-fr="Livraison rapide et sécurisée."
+data-ar="توصيل سريع وآمن.">
+
+Livraison rapide et sécurisée.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📦</div>
+
+<h3
+data-fr="Colis & Mandats"
+data-ar="الطرود والأمانات">
+
+Colis & Mandats
+
+</h3>
+
+<p
+data-fr="Vos colis livrés en toute confiance."
+data-ar="نوصل طرودك وأماناتك بكل ثقة.">
+
+Vos colis livrés en toute confiance.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📄</div>
+
+<h3
+data-fr="Documents"
+data-ar="الوثائق">
+
+Documents
+
+</h3>
+
+<p
+data-fr="Vos documents à destination."
+data-ar="نوصل وثائقك للمكان اللي بغيتي.">
+
+Vos documents à destination.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SLOGAN -->
+
+<section class="slogan">
+
+<h2>
+
+<span
+data-fr="Simo"
+data-ar="Simo">
+
+Simo
+
+</span>
+
+<span
+data-fr=" toujours près de vous"
+data-ar=" ديما قريب منكم">
+
+ toujours près de vous
+
+</span>
+
+</h2>
+
+</section>
+
+
+<!-- MARRAKECH MAP -->
+
+<section class="map-section" id="map">
+
+<div class="title">
+
+<h2
+data-fr="Livraison à Marrakech"
+data-ar="التوصيل في مراكش">
+
+Livraison à Marrakech
+
+</h2>
+
+<p
+data-fr="Nous sommes près de vous"
+data-ar="حنا ديما قريبين منكم">
+
+Nous sommes près de vous
+
+</p>
+
+</div>
+
+
+<div class="map-box">
+
+<img
+src="file_00000000ab2481f5b854773c6c10e86f.png"
+alt="Simo Pro Delivery - Carte de Marrakech">
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="title">
+
+<h2
+data-fr="À propos de nous"
+data-ar="من نحن">
+
+À propos de nous
+
+</h2>
+
+</div>
+
+
+<div class="about-box">
+
+<p
+data-fr="Simo Pro Delivery est un service de livraison rapide et fiable à Marrakech. Nous assurons la livraison de repas, documents, colis et médicaments avec professionnalisme."
+data-ar="Simo Pro Delivery هي خدمة توصيل سريعة وموثوقة في مراكش. نوفر توصيل الطعام والوثائق والطرود والأدوية باحترافية وسرعة.">
+
+Simo Pro Delivery est un service de livraison rapide et fiable à Marrakech.
+
+Nous assurons la livraison de repas, documents, colis et médicaments avec professionnalisme.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="title">
+
+<h2
+data-fr="Contactez-nous"
+data-ar="تواصل معنا">
+
+Contactez-nous
+
+</h2>
+
+<p
+data-fr="Disponible 24/24 et 7/7"
+data-ar="متوفرون 24/24 و7/7">
+
+Disponible 24/24 et 7/7
+
+</p>
+
+</div>
+
+
+<div class="phone">
+
+📞 0703394963
+
+</div>
+
+
+<a
+class="whatsapp"
+href="https://wa.me/212703394963"
+target="_blank"
+rel="noopener">
+
+💬 WhatsApp
+
+</a>
+
+
+<br>
+
+
+<a
+class="google-review"
+href="https://g.page/r/CdU8NoTJGz4kECE/review"
+target="_blank"
+rel="noopener">
+
+⭐ قيّمنا على Google
+
+</a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+© 2026 Simo Pro Delivery — Marrakech
+
+</p>
+
+
+<p
+data-fr="Livraison rapide et professionnelle"
+data-ar="توصيل سريع واحترافي">
+
+Livraison rapide et professionnelle
+
+</p>
+
+</footer>
+
+
+<!-- LANGUAGE SCRIPT -->
+
+<script>
+
+function setLang(lang){
+
+document.documentElement.lang = lang;
+
+if(lang === "ar"){
+
+document.documentElement.dir = "rtl";
+
+}else{
+
+document.documentElement.dir = "ltr";
+
+}
+
+
+document
+.querySelectorAll("[data-fr]")
+.forEach(function(el){
+
+el.textContent =
+el.getAttribute("data-" + lang);
+
+});
+
+
+document
+.getElementById("frBtn")
+.classList
+.toggle(
+"active",
+lang === "fr"
+);
+
+
+document
+.getElementById("arBtn")
+.classList
+.toggle(
+"active",
+lang === "ar"
+);
+
+
+localStorage.setItem(
+"language",
+lang
+);
+
+}
+
+
+const savedLang =
+localStorage.getItem("language")
+|| "fr";
+
+setLang(savedLang);
+
+</script>
+
+
+</body>
+
+</html>
